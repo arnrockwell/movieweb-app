@@ -1,0 +1,24 @@
+{
+    "1": {
+        "name": "Amanda",
+        "movies": {
+            "1": {
+                "title": "The Nightmare Before Christmas",
+                "director": "Henry Selick",
+                "year": "1993",
+                "rating": 7.9
+            }
+        }
+    },
+    "2": {
+        "name": "Usagi",
+        "movies": {
+            "1": {
+                "title": "Spirited Away",
+                "director": "Hayao Miyazaki",
+                "year": "2001",
+                "rating": 8.6
+            }
+        }
+    }
+}

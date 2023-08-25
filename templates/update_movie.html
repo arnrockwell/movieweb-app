@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+        <title>Update Movie - MovieWeb App</title>
+    </head>
+    <body>
+        <nav>
+            MovieWeb |
+            <a href="{{ url_for('home') }}">Home</a> |
+            <a href="{{ url_for('list_users') }}">Users</a> |
+            <a href="{{ url_for('add_user') }}">Add New User</a>
+        </nav>
+        <div class="container">
+            <main>
+                <h1>Update Movie</h1>
+                <p class="center">
+                    Updating movie information for the following user: {{ username }}
+                </p>
+                <div class="form-space">
+                    <form method="post" action="{{ url_for('update_movie', user_id=user_id, movie_id=movie_id) }}">
+                        <section class="center">
+                            <label for="title">Title:</label>
+                            <input type="text" id="title" name="title" value="{{ movie['title'] }}" required>
+                        </section>
+                        <section class="center">
+                            <label for="director">Director:</label>
+                            <input type="text" id="director" name="director" value="{{ movie['director'] }}" required>
+                        </section>
+                        <section class="center">
+                            <label for="year">Year:</label>
+                            <input type="text" id="year" name="year" value="{{ movie['year'] }}" required>
+                        </section>
+                        <section class="center">
+                            <label for="rating">Rating:</label>
+                            <input type="text" id="rating" name="rating" value="{{ movie['rating'] }}" required>
+                        </section>
+                        <section class="center">
+                            <button type="submit">Edit Movie</button>
+                        </section>
+                    </form>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>

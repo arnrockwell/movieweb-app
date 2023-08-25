@@ -1,0 +1,66 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+
+a {
+    color: #888;
+    text-decoration: none;
+}
+
+.center {
+    text-align: center;
+}
+
+.red {
+    color: #ff0000;
+}
+
+nav {
+    background-color: #ddd;
+    border-bottom: 3px solid #aaa;
+    padding: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    margin: 10px auto;
+}
+
+.form-space {
+    width: 50%;
+    margin: 10px auto;
+}
+
+.form-space section {
+    padding: 5px;
+    text-align: center;
+}
+
+h1 {
+    margin: 10px 0;
+    text-align: center;
+}
+
+p {
+    margin: 10px 0;
+}
+
+li {
+    margin: 5px 0;
+}
+
+.user-list, .movie-list {
+    list-style: none;
+}
+
+.user-list li, .movie-list li {
+    background-color: #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    width: 50%;
+    margin: 10px auto;
+    text-align: center;
+}
